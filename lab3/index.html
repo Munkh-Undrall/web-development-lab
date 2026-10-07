@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="mn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Лаборатори 02: Оюутны анкет</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Толгой хэсэг -->
+    <header class="site-header">
+
+        <h1>Оюутны Бүртгэлийн Портал</h1>
+
+        <!-- Навигацийн цэс -->
+        <nav>
+            <ul class="nav-list">
+                <li><a href="#">Нүүр</a></li>
+                <li><a href="#">Анкет засах</a></li>
+                <li><a href="#">Тусламж</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+
+    <!-- Үндсэн хэсэг -->
+    <main class="container">
+
+        <article class="form-card">
+
+            <section>
+
+                <h2>Оюутны Анкет Бөглөх</h2>
+
+                <p class="description">
+                    Доорх хэсэгт өөрийн мэдээллээ бүрэн, үнэн зөв бөглөнө үү.
+                </p>
+
+
+                <form action="#" method="POST" enctype="multipart/form-data">
+
+
+                    <!-- 1-р бүлэг: Хувийн мэдээлэл -->
+                    <fieldset class="form-section">
+
+                        <legend>Хувийн мэдээлэл</legend>
+
+                        <label for="lastname">Овог:</label>
+                        <input
+                            type="text"
+                            id="lastname"
+                            name="lastname"
+                            placeholder="Овгоо оруулна уу"
+                            minlength="2"
+                            required
+                        >
+
+                        <label for="firstname">Нэр:</label>
+                        <input
+                            type="text"
+                            id="firstname"
+                            name="firstname"
+                            placeholder="Нэрээ оруулна уу"
+                            minlength="2"
+                            required
+                        >
+
+                        <label for="email">Цахим хаяг (Email):</label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="example@gmail.com"
+                            required
+                        >
+
+                        <label for="password">Нууц үг:</label>
+                        <input
+                            type="password"
+                            id="password"
+                            name="password"
+                            placeholder="Хамгийн багадаа 8 тэмдэгт"
+                            minlength="8"
+                            required
+                        >
+
+                        <label for="phone">Утасны дугаар:</label>
+                        <input
+                            type="tel"
+                            id="phone"
+                            name="phone"
+                            pattern="[0-9]{8}"
+                            placeholder="88112233"
+                            required
+                        >
+
+                        <label for="birthdate">Төрсөн огноо:</label>
+                        <input
+                            type="date"
+                            id="birthdate"
+                            name="birthdate"
+                            required
+                        >
+
+
+                        <!-- Хаягийн мэдээлэл -->
+                        <h3>Хаягийн мэдээлэл</h3>
+
+                        <label for="city">Хот:</label>
+                        <select id="city" name="city" required>
+
+                            <option value="">
+                                -- Хот сонгоно уу --
+                            </option>
+
+                            <option value="ulaanbaatar">
+                                Улаанбаатар
+                            </option>
+
+                            <option value="darkhan">
+                                Дархан
+                            </option>
+
+                            <option value="erdenet">
+                                Эрдэнэт
+                            </option>
+
+                            <option value="other">
+                                Бусад
+                            </option>
+
+                        </select>
+
+
+                        <label for="district">Дүүрэг:</label>
+
+                        <select id="district" name="district" required>
+
+                            <option value="">
+                                -- Дүүрэг сонгоно уу --
+                            </option>
+
+                            <option value="bayanzurkh">
+                                Баянзүрх дүүрэг
+                            </option>
+
+                            <option value="bayangol">
+                                Баянгол дүүрэг
+                            </option>
+
+                            <option value="sukhbaatar">
+                                Сүхбаатар дүүрэг
+                            </option>
+
+                            <option value="khan-uul">
+                                Хан-Уул дүүрэг
+                            </option>
+
+                            <option value="chingeltei">
+                                Чингэлтэй дүүрэг
+                            </option>
+
+                            <option value="songino-khairkhan">
+                                Сонгинохайрхан дүүрэг
+                            </option>
+
+                            <option value="nalaih">
+                                Налайх дүүрэг
+                            </option>
+
+                            <option value="bagakhangai">
+                                Багахангай дүүрэг
+                            </option>
+
+                            <option value="baganuur">
+                                Багануур дүүрэг
+                            </option>
+
+                        </select>
+
+
+                        <label for="address">Дэлгэрэнгүй хаяг:</label>
+
+                        <input
+                            type="text"
+                            id="address"
+                            name="address"
+                            placeholder="Жишээ: 5-р хороо, 12-р байр, 45 тоот"
+                            minlength="5"
+                            required
+                        >
+
+
+                        <!-- Хүйс -->
+                        <label>Хүйс:</label>
+
+                        <div class="radio-group">
+
+                            <label>
+                                <input
+                                    type="radio"
+                                    id="male"
+                                    name="gender"
+                                    value="male"
+                                >
+                                Эрэгтэй
+                            </label>
+
+                            <label>
+                                <input
+                                    type="radio"
+                                    id="female"
+                                    name="gender"
+                                    value="female"
+                                >
+                                Эмэгтэй
+                            </label>
+
+                        </div>
+
+                    </fieldset>
+
+
+                    <!-- 2-р бүлэг: Сургалтын мэдээлэл -->
+                    <fieldset class="form-section">
+
+                        <legend>Сургалтын мэдээлэл</legend>
+
+
+                        <!-- Түвшин -->
+                        <label for="degree">
+                            Суралцаж буй түвшин:
+                        </label>
+
+                        <select
+                            id="degree"
+                            name="degree"
+                            required
+                        >
+
+                            <option value="">
+                                -- Сонгоно уу --
+                            </option>
+
+                            <option value="bachelor">
+                                Бакалавр
+                            </option>
+
+                            <option value="master">
+                                Магистр
+                            </option>
+
+                            <option value="doctor">
+                                Докторант
+                            </option>
+
+                        </select>
+
+
+                        <!-- Сургууль -->
+                        <label for="school">
+                            Сургууль:
+                        </label>
+
+                        <input
+                            type="text"
+                            id="school"
+                            name="school"
+                            placeholder="ШУТИС"
+                            minlength="2"
+                            required
+                        >
+
+
+                        <!-- Мэргэжил -->
+                        <label for="major">
+                            Мэргэжил:
+                        </label>
+
+                        <input
+                            type="text"
+                            id="major"
+                            name="major"
+                            placeholder="Кибер аюулгүй байдал"
+                            minlength="2"
+                            required
+                        >
+
+
+                        <!-- Курс -->
+                        <label for="course">
+                            Курс:
+                        </label>
+
+                        <select
+                            id="course"
+                            name="course"
+                            required
+                        >
+
+                            <option value="">
+                                -- Курс сонгоно уу --
+                            </option>
+
+                            <option value="1">
+                                1-р курс
+                            </option>
+
+                            <option value="2">
+                                2-р курс
+                            </option>
+
+                            <option value="3">
+                                3-р курс
+                            </option>
+
+                            <option value="4">
+                                4-р курс
+                            </option>
+
+                        </select>
+
+
+                        <!-- Дүнгийн хүснэгт -->
+                        <section>
+
+                            <h3>Миний дүн</h3>
+
+                            <table>
+
+                                <thead>
+
+                                    <tr>
+                                        <th>Хичээл</th>
+                                        <th>Дүн</th>
+                                    </tr>
+
+                                </thead>
+
+                                <tbody>
+
+                                    <tr>
+                                        <td>Программчлалын үндэс</td>
+                                        <td>93</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Объект хандлагат программчлал</td>
+                                        <td>90</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Мэдээллийн систем</td>
+                                        <td>97</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Англи хэл</td>
+                                        <td>97</td>
+                                    </tr>
+
+                                </tbody>
+
+                            </table>
+
+                        </section>
+
+
+                        <!-- Сонирхол -->
+                        <section>
+
+                            <h3>Миний сонирхол</h3>
+
+                            <p>
+                                Чөлөөт цагаараа дараах зүйлсийг хийх дуртай.
+                            </p>
+
+                            <ul>
+
+                                <li>Кино үзэх</li>
+
+                                <li>Фото зураг авах</li>
+
+                                <li>Аялах</li>
+
+                                <li>Хоолнуудын жор турших</li>
+
+                                <li>
+                                    Кибер аюулгүй байдлын талаар судлах
+                                </li>
+
+                            </ul>
+
+                        </section>
+
+
+                        <!-- Технологи -->
+                        <label>
+                            Сонирхож буй технологиуд:
+                        </label>
+
+                        <div class="checkbox-group">
+
+                            <label>
+                                <input
+                                    type="checkbox"
+                                    name="skills"
+                                    value="web"
+                                >
+                                Веб хөгжүүлэлт
+                            </label>
+
+                            <label>
+                                <input
+                                    type="checkbox"
+                                    name="interest"
+                                    value="design"
+                                >
+                                График дизайн
+                            </label>
+
+                            <label>
+                                <input
+                                    type="checkbox"
+                                    name="interest"
+                                    value="database"
+                                >
+                                Өгөгдлийн сан
+                            </label>
+
+                            <label>
+                                <input
+                                    type="checkbox"
+                                    name="interest"
+                                    value="ai"
+                                >
+                                Хиймэл оюун ухаан
+                            </label>
+
+                        </div>
+
+
+                        <!-- Нэмэлт мэдээлэл -->
+                        <label for="avatar">
+                            Профайл зураг оруулна уу:
+                        </label>
+
+                        <input
+                            type="file"
+                            id="avatar"
+                            name="avatar"
+                            accept="image/*"
+                        >
+
+                        <label for="bio">
+                            Товч танилцуулга:
+                        </label>
+
+                        <textarea
+                            id="bio"
+                            name="bio"
+                            rows="5"
+                            placeholder="Өөрийн танилцуулгыг энд бичнэ үү..."
+                            minlength="10"
+                            required
+                        ></textarea>
+
+                    </fieldset>
+
+
+                    <!-- Баталгаажуулалт -->
+                    <fieldset class="form-section confirmation">
+
+                        <legend>Баталгаажуулалт</legend>
+
+                        <label class="confirm-label">
+
+                            <input
+                                type="checkbox"
+                                id="confirm"
+                                name="confirm"
+                                required
+                            >
+
+                            Миний оруулсан мэдээлэл үнэн зөв болохыг
+                            баталгаажуулж байна.
+
+                        </label>
+                    </fieldset>
+
+
+                    <!-- Илгээх -->
+                    <div class="button-group">
+
+                        <button
+                            class="btn btn-submit"
+                            type="submit"
+                        >
+                            Анкет илгээх
+                        </button>
+
+                        <button
+                            class="btn btn-reset"
+                            type="reset"
+                        >
+                            Дахин эхлүүлэх
+                        </button>
+
+                    </div>
+
+                </form>
+            </section>
+        </article>
+    </main>
+
+
+    <!-- Хөл хэсэг -->
+    <footer class="site-footer">
+
+        <p>
+            &copy; 2026 Веб зохиомж хичээл.
+        </p>
+
+    </footer>
+</body>
+</html>
