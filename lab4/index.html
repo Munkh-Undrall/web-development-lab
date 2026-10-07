@@ -3,122 +3,139 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Миний танилцуулга</title>
+    <title>Онлайн сургалт</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <header>
-        <div>
-            <h1>Миний веб сайт</h1>
-            <p>Өөрийн тухай товч танилцуулга</p>
-        </div>
+    <header class="header">
+        <div class="logo">EduClass</div>
 
-        <nav>
-            <a href="#">Нүүр</a>
-            <a href="#">Миний тухай</a>
-            <a href="#">Сонирхол</a>
-            <a href="#">Холбоо барих</a>
+        <nav class="navbar">
+            <a href="#" class="active">Нүүр</a>
+            <a href="#">Сургалтууд</a>
+            <a href="#">Хичээлүүд</a>
+            <a href="#">Даалгавар</a>
+            <a href="#">Шалгалт</a>
         </nav>
     </header>
 
 
-    <div class="container">
+    <section class="welcome">
+        <div>
+            <h1>Oнлайн сургалт</h1>
+            <p>
+                Хичээлүүдээ сонгон судалж, мэдлэг чадвараа хөгжүүлээрэй.
+            </p>
+        </div>
+    </section>
 
-        <main>
+    <main class="main-container">
 
-            <section class="welcome">
-                <h2>Сайн байна уу?</h2>
+        <section class="content">
 
-                <p>
-                    Намайг Мөнх-Ундрал гэдэг. Би кибер аюулгүй байдлын
-                    чиглэлээр суралцдаг оюутан. Вэб хөгжүүлэлт,
-                    програмчлалын талаар суралцаж байгаа бөгөөд
-                    шинэ зүйл туршиж үзэх дуртай.
-                </p>
-            </section>
-
-
-            <section>
-                <h2 class="title">Миний сонирхол</h2>
-
-                <div class="cards">
-
-                    <div class="card">
-                        <h3>Програмчлал</h3>
-                        <p>
-                            C++, Python зэрэг програмчлалын хэл
-                            сурах сонирхолтой.
-                        </p>
-                    </div>
-
-
-                    <div class="card">
-                        <h3>Хөгжим</h3>
-                        <p>
-                            Өдөр тутамдаа янз бүрийн
-                            төрлийн дуу сонсох дуртай.
-                        </p>
-                    </div>
-
-                    <div class="card">
-                        <h3>Кино</h3>
-                        <p>
-                            Амралтын үедээ сонирхолтой
-                            шинэ кинонуудыг үзэх дуртай.
-                        </p>
-                    </div>
-
-                    <div class="card">
-                        <h3>Ном унших</h3>
-                        <p>
-                            Сурч байгаа зүйлтэйгээ холбоотой ном,
-                            нийтлэл уншиж мэдээлэл авдаг.
-                        </p>
-                    </div>
-
-                </div>
-            </section>
-
-        </main>
-
-
-        <aside>
-
-            <div class="about">
-                <h2>Миний тухай</h2>
-
-                <p><strong>Нэр:</strong> Б.Мөнх-Ундрал</p>
-                <p><strong>Нас:</strong> 19</p>
-                <p><strong>Анги:</strong> Кибер аюулгүй байдал</p>
+            <div class="section-title">
+                <h2>Сургалтууд</h2>
+                <p>Үндсэн хичээлүүд</p>
             </div>
 
-            <div class="skills">
-                <h2>Сурч байгаа зүйлс</h2>
+            <div class="subject-grid">
+
+                <article class="subject-card math">
+                    <div class="subject-icon">∑</div>
+                    <h3>Математик</h3>
+                    <a href="#">Сургалт руу орох →</a>
+                </article>
+
+
+                <article class="subject-card physics">
+                    <div class="subject-icon">⚛</div>
+                    <h3>Физик</h3>
+                    <a href="#">Сургалт руу орох →</a>
+                </article>
+
+
+                <article class="subject-card chemistry">
+                    <div class="subject-icon">⚗</div>
+                    <h3>Хими</h3>
+                    <a href="#">Сургалт руу орох →</a>
+                </article>
+
+
+                <article class="subject-card english">
+                    <div class="subject-icon">A</div>
+                    <h3>Англи хэл</h3>
+                    <a href="#">Сургалт руу орох →</a>
+                </article>
+
+
+                <article class="subject-card mongolian">
+                    <div class="subject-icon">文</div>
+                    <h3>Монгол хэл</h3>
+                    <a href="#">Сургалт руу орох →</a>
+                </article>
+
+
+                <article class="subject-card history">
+                    <div class="subject-icon">⌛</div>
+                    <h3>Түүх</h3>
+                    <a href="#">Сургалт руу орох →</a>
+                </article>
+
+            </div>
+        </section>
+
+        <aside class="sidebar">
+
+            <div class="sidebar-box">
+                <h3>Миний сургалтууд</h3>
 
                 <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                    <li>C++</li>
+                    <li><a href="#">Математик</a></li>
+                    <li><a href="#">Физик</a></li>
+                    <li><a href="#">Хими</a></li>
+                    <li><a href="#">Англи хэл</a></li>
+                    <li><a href="#">Монгол хэл</a></li>
                 </ul>
             </div>
 
-            <div class="contact">
-                <h2>Холбоо барих</h2>
 
-                <p>batmunkhundrl@gmail.com</p>
-                <p>94886222</p>
+            <div class="sidebar-box">
+                <h3>Даалгавар</h3>
+
+                <ul>
+                    <li><a href="#">Математикийн даалгавар</a></li>
+                    <li><a href="#">Физикийн бодлого</a></li>
+                    <li><a href="#">Химийн дасгал</a></li>
+                </ul>
+            </div>
+
+
+            <div class="sidebar-box">
+                <h3>Сургалтын материал</h3>
+
+                <ul>
+                    <li><a href="#">Видео хичээл</a></li>
+                    <li><a href="#">PDF материал</a></li>
+                    <li><a href="#">Дасгал ажил</a></li>
+                    <li><a href="#">Шалгалтын материал</a></li>
+                </ul>
             </div>
 
         </aside>
 
-    </div>
+    </main>
 
+    <footer class="footer">
+        <div>
+            <h3>EduClass</h3>
+            <p>Онлайн сургалтын платформ</p>
+        </div>
 
-    <footer>
-        <p>© 2026 Миний веб сайт</p>
+        <div>
+            <p>© 2026 EduClass</p>
+        </div>
     </footer>
 
 </body>
