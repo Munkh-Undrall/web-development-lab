@@ -1,0 +1,55 @@
+// MAPS
+$colors: (
+  primary: #2563eb,
+  primary-dark: #1d4ed8,
+  page-bg: #f5f7fb,
+  card-bg: #ffffff,
+  text: #1e293b,
+  muted: #64748b,
+  border: #e2e8f0,
+  hero-bg: #eaf2ff,
+  footer-bg: #172554,
+);
+
+$dark-colors: (
+  page-bg: #111318,
+  card-bg: #1c1f26,
+  text: #e5e7eb,
+  muted: #a1a1aa,
+  border: #30343d,
+  hero-bg: #242832,
+  footer-bg: #0b0d11,
+);
+
+$breakpoints: (
+  tablet: 1000px,
+  mobile: 700px,
+  small: 460px,
+);
+
+// CUSTOM PROPERTIES (:root)
+:root {
+  --primary: #{map-get($colors, primary)};
+  --primary-dark: #{map-get($colors, primary-dark)};
+  --page-bg: #{map-get($colors, page-bg)};
+  --card-bg: #{map-get($colors, card-bg)};
+  --text: #{map-get($colors, text)};
+  --muted: #{map-get($colors, muted)};
+  --border: #{map-get($colors, border)};
+  --hero-bg: #{map-get($colors, hero-bg)};
+  --footer-bg: #{map-get($colors, footer-bg)};
+  --radius: 16px;
+  --shadow: 0 8px 24px rgba(15, 23, 42, 0.07);
+  --transition: 0.3s ease;
+}
+
+body.dark-mode {
+  --page-bg: #{map-get($dark-colors, page-bg)};
+  --card-bg: #{map-get($dark-colors, card-bg)};
+  --text: #{map-get($dark-colors, text)};
+  --muted: #{map-get($dark-colors, muted)};
+  --border: #{map-get($dark-colors, border)};
+  --hero-bg: #{map-get($dark-colors, hero-bg)};
+  --footer-bg: #{map-get($dark-colors, footer-bg)};
+  color-scheme: dark;
+}

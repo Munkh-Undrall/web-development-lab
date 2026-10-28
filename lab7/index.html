@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="EduClass онлайн сургалтын платформ">
+    <title>EduClass | Онлайн сургалт</title>
+   <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="header" id="home">
+    <a href="#home" class="logo" aria-label="EduClass нүүр хуудас">
+        <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 40 40"
+            width="36"
+            height="36"
+            aria-hidden="true"
+        >
+            <rect width="40" height="40" rx="12" fill="#2563eb"/>
+
+            <path
+                d="M5 10 Q13 7 20 13 Q27 7 35 10 V30 Q27 27 20 33 Q13 27 5 30 Z"
+                fill="white"
+                stroke="white"
+                stroke-width="1.5"
+            />
+
+            <path d="M20 13 V33" stroke="#2563eb" stroke-width="1.5"/>
+        </svg>
+        <span>EduClass</span></a>
+
+    <nav class="navbar" aria-label="Үндсэн цэс">
+        <a href="#home">Нүүр</a>
+        <a href="#courses">Сургалтууд</a>
+        <a href="#materials">Хичээлүүд</a>
+        <a href="#assignments">Даалгавар</a>
+        <a href="#video">Бичлэг</a>
+    </nav>
+
+    <button type="button" class="theme-toggle" id="themeToggle"
+            aria-pressed="false">
+        <span id="themeIcon" aria-hidden="true">☾</span>
+        <span id="themeLabel">Dark mode</span>
+    </button>
+</header>
+
+<section class="welcome">
+    <div class="welcome-content">
+        <span class="welcome-label">EDUCLASS ONLINE</span>
+        <h1>Онлайн сургалт</h1>
+        <p>Хичээлүүдээ сонгон судалж, мэдлэг чадвараа хөгжүүлээрэй.</p>
+        <a href="#courses" class="welcome-btn">Хичээлүүд үзэх →</a>
+    </div>
+
+    <svg class="welcome-decoration" viewBox="0 0 180 180"
+         role="img" aria-label="Номын зураг">
+        <circle cx="90" cy="90" r="76" fill="#dbeafe"/>
+        <path d="M42 53 Q66 45 90 61 Q114 45 138 53 V119 Q114 111 90 127 Q66 111 42 119 Z"
+              fill="#ffffff" stroke="#2563eb" stroke-width="4"
+              stroke-linejoin="round"/>
+        <path d="M90 61 V127" stroke="#2563eb" stroke-width="4"/>
+        <path d="M53 72 Q69 68 79 76 M53 88 Q69 84 79 92 M101 76 Q116 68 127 72 M101 92 Q116 84 127 88"
+              fill="none" stroke="#93c5fd" stroke-width="3"
+              stroke-linecap="round"/>
+    </svg>
+</section>
+
+<div class="main-container">
+<main class="content">
+
+<section class="section-block" id="courses">
+    <div class="section-heading">
+        <div>
+            <h2>Сургалтууд</h2>
+            <p>Үндсэн хичээлүүд</p>
+        </div>
+        <button type="button" id="flipToggle" class="secondary-btn"
+                aria-pressed="false">
+            Бүх картыг эргүүлэх ↻
+        </button>
+    </div>
+
+    <div class="course-grid">
+
+        <article class="subject-card math" tabindex="0" style="--i: 0">
+            <div class="flip-inner">
+                <div class="flip-front">
+                    <img src="img/photo1.jpg" alt="Математикийн хичээл" loading="lazy">
+                    <div class="card-body">
+                        <span class="course-icon" aria-hidden="true">π</span>
+                        <h3>Математик</h3>
+                        <p>Тоо бодох, логик сэтгэлгээгээ хөгжүүлээрэй.</p>
+                        <span class="flip-hint">Дэлгэрэнгүй харах ↻</span>
+                    </div>
+                </div>
+                <div class="flip-back">
+                    <span class="back-icon" aria-hidden="true">π</span>
+                    <h3>Математик</h3>
+                    <p>Томьёо, тэгшитгэл болон бодлого бодох.</p>
+                    <a href="#materials">Сургалт руу орох →</a>
+                </div>
+            </div>
+        </article>
+
+        <article class="subject-card physics" tabindex="0" style="--i: 1">
+            <div class="flip-inner">
+                <div class="flip-front">
+                    <img src="img/photo2.jpg" alt="Физикийн хичээл" loading="lazy">
+                    <div class="card-body">
+                        <span class="course-icon" aria-hidden="true">Ω</span>
+                        <h3>Физик</h3>
+                        <p>Байгаль дахь үзэгдэл, хөдөлгөөнийг судлаарай.</p>
+                        <span class="flip-hint">Дэлгэрэнгүй харах ↻</span>
+                    </div>
+                </div>
+                <div class="flip-back">
+                    <span class="back-icon" aria-hidden="true">Ω</span>
+                    <h3>Физик</h3>
+                    <p>Хүч, хөдөлгөөн, энергийн тухай хичээлүүд.</p>
+                    <a href="#materials">Сургалт руу орох →</a>
+                </div>
+            </div>
+        </article>
+
+        <article class="subject-card chemistry" tabindex="0" style="--i: 2">
+            <div class="flip-inner">
+                <div class="flip-front">
+                    <img src="img/photo3.jpg" alt="Химийн хичээл" loading="lazy">
+                    <div class="card-body">
+                        <span class="course-icon" aria-hidden="true">H₂O</span>
+                        <h3>Хими</h3>
+                        <p>Бодисын шинж чанар, урвалыг таньж мэдээрэй.</p>
+                        <span class="flip-hint">Дэлгэрэнгүй харах ↻</span>
+                    </div>
+                </div>
+                <div class="flip-back">
+                    <span class="back-icon" aria-hidden="true">H₂O</span>
+                    <h3>Хими</h3>
+                    <p>Элемент, нэгдэл болон химийн урвалын тухай.</p>
+                    <a href="#materials">Сургалт руу орох →</a>
+                </div>
+            </div>
+        </article>
+
+        <article class="subject-card english" tabindex="0" style="--i: 3">
+            <div class="flip-inner">
+                <div class="flip-front">
+                    <img src="img/photo4.jpg" alt="Англи хэлний хичээл" loading="lazy">
+                    <div class="card-body">
+                        <span class="course-icon" aria-hidden="true">Ab</span>
+                        <h3>Англи хэл</h3>
+                        <p>Үгсийн сан болон хэлний чадвараа сайжруулаарай.</p>
+                        <span class="flip-hint">Дэлгэрэнгүй харах ↻</span>
+                    </div>
+                </div>
+                <div class="flip-back">
+                    <span class="back-icon" aria-hidden="true">Ab</span>
+                    <h3>Англи хэл</h3>
+                    <p>Шинэ үг, дүрэм, унших болон сонсох дасгалууд.</p>
+                    <a href="#materials">Сургалт руу орох →</a>
+                </div>
+            </div>
+        </article>
+
+        <article class="subject-card mongolian" tabindex="0" style="--i: 4">
+            <div class="flip-inner">
+                <div class="flip-front">
+                    <img src="img/photo5.jpg" alt="Монгол хэлний хичээл" loading="lazy">
+                    <div class="card-body">
+                        <span class="course-icon" aria-hidden="true">Аa</span>
+                        <h3>Монгол хэл</h3>
+                        <p>Зөв бичих, найруулан бичих чадвараа хөгжүүлээрэй.</p>
+                        <span class="flip-hint">Дэлгэрэнгүй харах ↻</span>
+                    </div>
+                </div>
+                <div class="flip-back">
+                    <span class="back-icon" aria-hidden="true">Аa</span>
+                    <h3>Монгол хэл</h3>
+                    <p>Дүрэм, зөв бичих болон эх зохион бичих.</p>
+                    <a href="#materials">Сургалт руу орох →</a>
+                </div>
+            </div>
+        </article>
+
+        <article class="subject-card history" tabindex="0" style="--i: 5">
+            <div class="flip-inner">
+                <div class="flip-front">
+                    <img src="img/photo6.jpg" alt="Түүхийн хичээл" loading="lazy">
+                    <div class="card-body">
+                        <span class="course-icon" aria-hidden="true">◷ </span>
+                        <h3>Түүх</h3>
+                        <p>Өнгөрсөн үеийн үйл явдал, соёлыг судлаарай.</p>
+                        <span class="flip-hint">Дэлгэрэнгүй харах ↻</span>
+                    </div>
+                </div>
+                <div class="flip-back">
+                    <span class="back-icon" aria-hidden="true">◷ </span>
+                    <h3>Түүх</h3>
+                    <p>Монголын болон дэлхийн түүхийн хичээлүүд.</p>
+                    <a href="#materials">Сургалт руу орох →</a>
+                </div>
+            </div>
+        </article>
+
+    </div>
+</section>
+
+<section class="section-block" id="video">
+    <div class="section-heading">
+        <div>
+            <h2>Видео хичээл</h2>
+            <p>Бичлэг үзэж, хичээлээ бататгаарай.</p>
+        </div>
+    </div>
+
+    <div class="media-card">
+        <h3>Хичээлийн бичлэг</h3>
+
+        <div class="youtube-player">
+            <iframe
+                src="https://www.youtube-nocookie.com/embed/E5VXKZhy-cw"
+                title="Видео хичээл"
+                loading="lazy"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen>
+            </iframe>
+        </div>
+
+        <p class="media-note">
+            <a href="https://youtu.be/E5VXKZhy-cw"
+               target="_blank"
+               rel="noopener noreferrer">
+                YouTube дээр нээх ↗
+            </a>
+        </p>
+    </div>
+</section>
+
+<section class="section-block" id="materials">
+    <div class="section-heading">
+        <div>
+            <h2>Сургалтын материал</h2>
+        </div>
+    </div>
+
+    <div class="materials-grid">
+        <article class="material-card">
+            <span class="material-icon" aria-hidden="true">▶</span>
+            <h3>Видео хичээл</h3>
+            <p>Хичээлийн бичлэг үзэж мэдлэгээ бататгаарай.</p>
+            <a href="#video">Бичлэг үзэх →</a>
+        </article>
+        <article class="material-card">
+            <span class="material-icon" aria-hidden="true">▤</span>
+            <h3>PDF материал</h3>
+            <p>Хичээлийн тэмдэглэл, унших материалыг ашиглаарай.</p>
+            <a href="#assignments">Материал харах →</a>
+        </article>
+        <article class="material-card">
+            <span class="material-icon" aria-hidden="true">✓</span>
+            <h3>Дасгал ажил</h3>
+            <p>Дасгал ажил хийж ойлголтоо шалгаарай.</p>
+            <a href="#assignments">Дасгал харах →</a>
+        </article>
+    </div>
+</section>
+
+<section class="section-block" id="assignments">
+    <div class="section-heading">
+        <h2>Даалгавар</h2>
+    </div>
+
+    <div class="assignment-list">
+        <div class="assignment-item">
+            <span class="assignment-dot math-dot"></span>
+            <div>
+                <h3>Математикийн бодлого</h3>
+                <p>Тэгшитгэл болон тооцооллын дасгал</p>
+            </div>
+            <span class="assignment-tag">Дэлгэрэнгүй</span>
+        </div>
+        <div class="assignment-item">
+            <span class="assignment-dot physics-dot"></span>
+            <div>
+                <h3>Физикийн даалгавар</h3>
+                <p>Хөдөлгөөн, хүчний бодлого</p>
+            </div>
+            <span class="assignment-tag">Дэлгэрэнгүй</span>
+        </div>
+        <div class="assignment-item">
+            <span class="assignment-dot chemistry-dot"></span>
+            <div>
+                <h3>Химийн даалгавар</h3>
+                <p>Элемент болон химийн урвалын дасгал</p>
+            </div>
+            <span class="assignment-tag">Дэлгэрэнгүй</span>
+        </div>
+    </div>
+</section>
+
+</main>
+
+<aside class="sidebar">
+    <section class="sidebar-card">
+        <h2>Миний сургалтууд</h2>
+        <a href="#courses">Математик <span>→</span></a>
+        <a href="#courses">Физик <span>→</span></a>
+        <a href="#courses">Англи хэл <span>→</span></a>
+    </section>
+
+    <section class="sidebar-card">
+        <h2>Даалгавар</h2>
+        <p>Математикийн бодлого</p>
+        <p>Физикийн дасгал</p>
+        <p>Химийн давтлага</p>
+    </section>
+
+    <section class="sidebar-card">
+        <h2>Сургалтын материал</h2>
+        <a href="#video">Видео хичээл <span>▶</span></a>
+        <a href="#materials">PDF материал <span>▤</span></a>
+        <a href="#assignments">Дасгал ажил <span>✓</span></a>
+    </section>
+</aside>
+</div>
+
+<footer class="footer">
+    <h2>EduClass</h2>
+    <p>Онлайн сургалтын платформ</p>
+    <p>© 2026 EduClass. Бүх эрх хуулиар хамгаалагдсан.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
