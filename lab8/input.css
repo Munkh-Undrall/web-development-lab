@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+/* Dark mode-ийг data-theme атрибутаар удирдана */
+@custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
+
+/* Өөрийн үндсэн өнгө */
+@theme {
+  --color-brand: #2563eb;
+}
+
+/* Картын зургийн өндөр */
+.course-img {
+  height: 170px;
+  object-fit: cover;
+}
